@@ -13,7 +13,7 @@ catch (Exception $e)
 
 }
 
-    $reponse = $bdd->query('SELECT * from professeur');
+    $reponse = $bdd->query('SELECT * from professeur where prof_id < 10');
 
     while ($ligne = $reponse->fetch()){
 
