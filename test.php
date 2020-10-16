@@ -11,6 +11,7 @@ catch (Exception $e)
 
     die('Erreur : ' . $e->getMessage());
 
+
 }
 
     $reponse = $bdd->query('SELECT * from professeur');
@@ -18,7 +19,7 @@ catch (Exception $e)
     while ($ligne = $reponse->fetch()){
 
 
-        echo 'Le professeur '.$ligne['nom'].' '.$ligne['prenom'].' a comme adresse : '.$ligne['adresse'].'</br>';
+        echo 'Le Professeur '.$ligne['nom'].' '.$ligne['prenom'].' a comme adresse : '.$ligne['adresse'].'</br>';
 
 
     }
